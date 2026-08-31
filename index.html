@@ -1,525 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Burundi Optimization & Intelligence | BOI</title>
-
-  <meta name="description" content="Burundi Optimization & Intelligence (BOI) develops AI, algorithmic optimization, data science and applied research solutions for complex problems in emerging economies.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #172033;
-      background: #ffffff;
-    }
-
-    header {
-      background: #0b1220;
-      color: white;
-      padding: 18px 7%;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    .logo span {
-      color: #4ade80;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 22px;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover {
-      color: #4ade80;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0b1220, #183153);
-      color: white;
-      padding: 110px 7%;
-    }
-
-    .hero-content {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .tag {
-      color: #4ade80;
-      font-weight: bold;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-
-    h1 {
-      font-size: clamp(2.5rem, 6vw, 4.8rem);
-      line-height: 1.05;
-      max-width: 900px;
-      margin-bottom: 25px;
-    }
-
-    .hero p {
-      max-width: 750px;
-      font-size: 1.2rem;
-      color: #dbe5f5;
-      margin-bottom: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 8px;
-      background: #4ade80;
-      color: #07111f;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-    }
-
-    .button.secondary {
-      background: transparent;
-      border: 1px solid #8ea4c4;
-      color: white;
-    }
-
-    section {
-      padding: 80px 7%;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: 2.3rem;
-      margin-bottom: 15px;
-      color: #0b1220;
-    }
-
-    .section-intro {
-      max-width: 750px;
-      color: #5b6678;
-      margin-bottom: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      padding: 28px;
-      border: 1px solid #e3e8ef;
-      border-radius: 12px;
-      background: #ffffff;
-      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-      color: #12213a;
-    }
-
-    .card p {
-      color: #5b6678;
-    }
-
-    .about {
-      background: #f5f8fb;
-    }
-
-    .focus-list {
-      margin-top: 20px;
-      padding-left: 20px;
-    }
-
-    .focus-list li {
-      margin-bottom: 10px;
-    }
-
-    .research {
-      background: #0b1220;
-      color: white;
-    }
-
-    .research .section-title {
-      color: white;
-    }
-
-    .research .section-intro {
-      color: #c8d4e5;
-    }
-
-    .research-box {
-      border: 1px solid #33445f;
-      border-radius: 12px;
-      padding: 28px;
-      margin-top: 20px;
-    }
-
-    .research-box h3 {
-      color: #4ade80;
-      margin-bottom: 10px;
-    }
-
-    .founder {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 35px;
-      align-items: center;
-    }
-
-    .founder-box {
-      background: #f5f8fb;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    .founder-box strong {
-      display: block;
-      font-size: 1.2rem;
-      margin-bottom: 5px;
-    }
-
-    .contact {
-      background: #f5f8fb;
-    }
-
-    .contact-box {
-      background: white;
-      padding: 35px;
-      border-radius: 12px;
-      border: 1px solid #e3e8ef;
-    }
-
-    .contact-box a {
-      color: #1261a0;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #070d18;
-      color: #aebbd0;
-      text-align: center;
-      padding: 30px 7%;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 750px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      nav a {
-        margin: 0 7px;
-      }
-
-      .grid,
-      .founder {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 80px 7%;
-      }
-
-      section {
-        padding: 60px 7%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Burundi Optimization & Intelligence (BOI) explores artificial intelligence, algorithms, optimization, data science and mathematical modelling for practical challenges in emerging economies.">
+<meta name="author" content="Burundi Optimization & Intelligence">
+<title>Burundi Optimization & Intelligence | BOI</title>
+<style>
+:root{--navy:#081426;--navy2:#10233e;--green:#45df82;--text:#122033;--muted:#617083;--light:#f4f7fa;--white:#fff;--border:#dce4ec;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.65;color:var(--text)}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:1000;background:rgba(8,20,38,.97);border-bottom:1px solid #ffffff14}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{color:#fff;font-size:1.35rem;font-weight:800;letter-spacing:.08em}.logo span{color:var(--green)}
+nav ul{list-style:none;display:flex;gap:25px}nav a{color:#e8eef6;font-size:.9rem;font-weight:600}nav a:hover{color:var(--green)}
+.hero{color:#fff;background:radial-gradient(circle at 80% 20%,#45df821f,transparent 28%),linear-gradient(135deg,var(--navy),var(--navy2));padding:105px 0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:65px;align-items:center}
+.eyebrow{display:inline-block;color:var(--green);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.03;letter-spacing:-.045em;margin-bottom:25px}
+.hero p{color:#c9d5e3;font-size:1.1rem;max-width:720px;margin-bottom:32px}
+.buttons{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-block;padding:13px 21px;border-radius:9px;font-weight:800}
+.btn-primary{background:var(--green);color:#062012}.btn-outline{color:#fff;border:1px solid #ffffff59}
+.hero-card{padding:30px;border:1px solid #ffffff24;background:#ffffff0d;border-radius:16px}
+.hero-card strong{display:block;color:var(--green);font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+.hero-card h2{font-size:1.5rem;line-height:1.2;margin-bottom:13px}.hero-card p{font-size:.95rem;margin:0}
+section{padding:85px 0}section.alt{background:var(--light)}
+.section-heading{max-width:760px;margin-bottom:40px}.section-heading .eyebrow{margin-bottom:10px}
+.section-title{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-.03em;margin-bottom:13px}
+.section-heading p{color:var(--muted)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card,.research-card,.domain{background:#fff;border:1px solid var(--border);border-radius:16px;padding:27px;box-shadow:0 12px 35px #08142614}
+.card h3,.research-card h3,.domain h3{margin-bottom:9px}.card p,.research-card p,.domain p{color:var(--muted)}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.research-card{box-shadow:none}
+.research-card:hover{transform:translateY(-3px)}.number{color:#20b963;font-weight:900;font-size:.78rem;letter-spacing:.1em;margin-bottom:15px}
+.domains{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.domain{box-shadow:none}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.project{background:#0b192c;color:#fff;border:1px solid #20324b;border-radius:16px;padding:27px}
+.project .status{display:block;color:var(--green);font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+.project h3{margin-bottom:9px}.project p{color:#bdc9d8;font-size:.94rem}.project small{display:block;color:#8494a8;margin-top:17px}
+.collaboration{background:linear-gradient(135deg,#edf9f2,#f6faf8);border:1px solid #d4eadc;border-radius:22px;padding:45px;display:grid;grid-template-columns:1.4fr .6fr;gap:35px}
+.collaboration p{color:var(--muted);margin-top:10px}.collab-list{list-style:none}.collab-list li{padding:8px 0;border-bottom:1px solid #d7e7dc;font-weight:700}.collab-list li:before{content:"✓";color:#20b963;margin-right:8px}
+.leadership{display:grid;grid-template-columns:300px 1fr;gap:45px;align-items:center}.person{background:var(--light);border:1px solid var(--border);border-radius:16px;padding:30px 20px;text-align:center}
+.avatar{width:75px;height:75px;margin:auto auto 16px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--green);font-weight:900;font-size:1.3rem}
+.person p,.leadership-text p{color:var(--muted)}.leadership-text p{margin-top:11px}
+.contact-box{background:var(--navy);color:#fff;border-radius:22px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-box p{color:#c4d0df;margin-top:10px}
+.contact-details{display:grid;gap:13px}.contact-item{padding:16px 18px;border:1px solid #263952;border-radius:10px;background:#ffffff08}
+.contact-item strong{display:block;color:var(--green);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}.contact-item a{overflow-wrap:anywhere}
+footer{background:#050d18;color:#91a0b2;text-align:center;padding:27px 0;font-size:.84rem}
+@media(max-width:900px){.hero-grid,.about-grid,.contact-box,.collaboration,.leadership{grid-template-columns:1fr}.research-grid{grid-template-columns:repeat(2,1fr)}.projects,.domains{grid-template-columns:1fr}}
+@media(max-width:620px){.nav{min-height:65px}.logo{font-size:1rem}nav ul{gap:9px}nav a{font-size:.68rem}section{padding:62px 0}.research-grid{grid-template-columns:1fr}.hero{padding:75px 0}.hero p{font-size:1rem}h1{font-size:2.7rem}.collaboration,.contact-box{padding:29px 22px}}
+</style>
 </head>
-
 <body>
+<header><div class="container nav">
+<a class="logo" href="#top">BOI<span>.</span></a>
+<nav aria-label="Main navigation"><ul>
+<li><a href="#about">About</a></li><li><a href="#research">Research</a></li><li><a href="#projects">Projects</a></li><li><a href="#collaboration">Collaborate</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+</div></header>
 
-<header>
-  <nav>
-    <div class="logo">BOI<span>.</span></div>
+<main id="top">
+<section class="hero"><div class="container hero-grid"><div>
+<span class="eyebrow">Burundi Optimization & Intelligence</span>
+<h1>Algorithms, AI & Optimization for Complex Problems</h1>
+<p>BOI is a technology and research-oriented initiative exploring artificial intelligence, algorithms, data science, mathematical modelling and optimization for practical challenges in emerging economies.</p>
+<div class="buttons"><a class="btn btn-primary" href="#research">Explore Our Research</a><a class="btn btn-outline" href="#contact">Collaborate With BOI</a></div>
+</div><aside class="hero-card"><strong>Our approach</strong><h2>From mathematical models to practical solutions.</h2><p>We investigate computational methods that can improve decision-making, resource allocation, planning and technological innovation in resource-constrained environments.</p></aside></div></section>
 
-    <div>
-      <a href="#about">About</a>
-      <a href="#focus">Focus</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
+<section id="about" class="alt"><div class="container">
+<div class="section-heading"><span class="eyebrow">About BOI</span><h2 class="section-title">A research-driven technology initiative</h2><p>Burundi Optimization & Intelligence (BOI) develops and explores computational and data-driven approaches to complex problems, connecting mathematical and computational methods with practical applications.</p></div>
+<div class="about-grid">
+<article class="card"><h3>Mission</h3><p>To investigate how algorithms, artificial intelligence, optimization and data analysis can support better decisions, efficient resource allocation and technological innovation.</p></article>
+<article class="card"><h3>Vision</h3><p>To contribute to a stronger ecosystem of computational research and responsible technology in Burundi and across emerging economies.</p></article>
+<article class="card"><h3>Research Philosophy</h3><p>We combine mathematical reasoning, computational experimentation and real-world problem formulation to move from abstract methods toward useful applications.</p></article>
+<article class="card"><h3>Context</h3><p>BOI pays particular attention to environments where data, infrastructure and financial or computational resources may be limited.</p></article>
+</div></div></section>
 
-<section class="hero">
-  <div class="hero-content">
+<section id="research"><div class="container">
+<div class="section-heading"><span class="eyebrow">Research</span><h2 class="section-title">Core research areas</h2><p>BOI focuses on computational disciplines that can be adapted to complex real-world systems.</p></div>
+<div class="research-grid">
+<article class="research-card"><div class="number">01</div><h3>Artificial Intelligence</h3><p>Machine learning and AI approaches for prediction, classification, decision support and practical data-driven applications.</p></article>
+<article class="research-card"><div class="number">02</div><h3>Algorithms & Optimization</h3><p>Algorithmic and optimization methods for resource allocation, scheduling, routing and difficult combinatorial problems.</p></article>
+<article class="research-card"><div class="number">03</div><h3>Data Science</h3><p>Data analysis, statistical reasoning and computational techniques for extracting useful and actionable insights.</p></article>
+<article class="research-card"><div class="number">04</div><h3>Graph Theory & Networks</h3><p>Graph-based modelling and network analysis for interconnected systems, infrastructure and complex relationships.</p></article>
+<article class="research-card"><div class="number">05</div><h3>Mathematical Modelling</h3><p>Mathematical representations of real systems to understand, simulate and optimize decisions under constraints.</p></article>
+<article class="research-card"><div class="number">06</div><h3>Operations Research</h3><p>Quantitative methods for planning, logistics, decision-making and efficient use of scarce resources.</p></article>
+</div></div></section>
 
-    <div class="tag">Burundi Optimization & Intelligence</div>
+<section class="alt"><div class="container">
+<div class="section-heading"><span class="eyebrow">Applications</span><h2 class="section-title">Where we apply computational thinking</h2></div>
+<div class="domains">
+<article class="domain"><h3>Agricultural Systems</h3><p>Data-driven approaches for agricultural planning, supply chains, resource management and production systems.</p></article>
+<article class="domain"><h3>Logistics & Transportation</h3><p>Routing, scheduling, network analysis and optimization for transportation and distribution systems.</p></article>
+<article class="domain"><h3>Resource Allocation</h3><p>Computational methods for allocating limited resources across competing needs and operational constraints.</p></article>
+<article class="domain"><h3>Emerging Economies</h3><p>Methods designed with real constraints in mind, including limited infrastructure, incomplete data and constrained resources.</p></article>
+</div></div></section>
 
-    <h1>
-      Algorithms, Intelligence & Optimization for Complex Problems
-    </h1>
+<section id="projects"><div class="container">
+<div class="section-heading"><span class="eyebrow">Research & Development</span><h2 class="section-title">Projects & technical work</h2><p>BOI is building its research portfolio. This section will document research projects, technical experiments, publications and collaborations as they become available.</p></div>
+<div class="projects">
+<article class="project"><span class="status">Research direction</span><h3>Combinatorial Optimization</h3><p>Investigation of algorithms for difficult decision and allocation problems involving discrete choices, constraints and competing objectives.</p><small>Research portfolio in development</small></article>
+<article class="project"><span class="status">Research direction</span><h3>Graph-Based Modelling</h3><p>Exploration of graph models and network algorithms for understanding interconnected systems and improving network-level decisions.</p><small>Research portfolio in development</small></article>
+<article class="project"><span class="status">Applied research</span><h3>Optimization for Agricultural Systems</h3><p>Exploring computational approaches to agricultural supply chains, planning and efficient management of production resources.</p><small>Research portfolio in development</small></article>
+<article class="project"><span class="status">Applied research</span><h3>Data-Driven Decision Support</h3><p>Investigating how data analysis and AI can support better decisions in practical environments where reliable information is limited.</p><small>Research portfolio in development</small></article>
+</div></div></section>
 
-    <p>
-      BOI is a technology and research-oriented initiative exploring
-      artificial intelligence, algorithms, data science and optimization
-      for practical challenges in emerging economies.
-    </p>
+<section id="collaboration" class="alt"><div class="container"><div class="collaboration">
+<div><span class="eyebrow">Research Collaboration</span><h2 class="section-title">Let's solve complex problems together.</h2><p>BOI is interested in connecting with researchers, universities, technology organizations, students and practitioners working in algorithms, discrete mathematics, optimization, AI and data science.</p><div class="buttons" style="margin-top:22px"><a class="btn btn-primary" href="#contact">Start a Conversation</a></div></div>
+<ul class="collab-list"><li>Universities & research groups</li><li>Technology organizations</li><li>Researchers & academics</li><li>Students & emerging researchers</li><li>Development practitioners</li></ul>
+</div></div></section>
 
-    <a href="#about" class="button">Discover BOI</a>
-    <a href="#contact" class="button secondary">Contact us</a>
+<section><div class="container">
+<div class="section-heading"><span class="eyebrow">Leadership</span><h2 class="section-title">Building BOI</h2></div>
+<div class="leadership"><div class="person"><div class="avatar">DN</div><h3>Daphrose Nindorera</h3><p>Founder & CEO<br>Burundi Optimization & Intelligence</p></div>
+<div class="leadership-text"><h2>Founder & Research Leadership</h2><p>BOI was founded by Daphrose Nindorera with an interest in computational methods, artificial intelligence, optimization, data-driven technologies and applied research.</p><p>The initiative is being developed as a platform for research, experimentation, collaboration and technology projects focused on complex problems relevant to Burundi and emerging economies.</p></div></div>
+</div></section>
 
-  </div>
-</section>
-
-<section id="about" class="about">
-  <div class="container">
-
-    <h2 class="section-title">About BOI</h2>
-
-    <p class="section-intro">
-      Burundi Optimization & Intelligence (BOI) develops and explores
-      computational and data-driven approaches to complex problems.
-      Our work connects mathematical and computational methods with
-      practical applications.
-    </p>
-
-    <div class="card">
-      <h3>Our Mission</h3>
-
-      <p>
-        To investigate how algorithms, artificial intelligence,
-        optimization and data analysis can support better decision-making,
-        efficient resource allocation and technological innovation.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section id="focus">
-  <div class="container">
-
-    <h2 class="section-title">Areas of Focus</h2>
-
-    <p class="section-intro">
-      BOI focuses on computational approaches that can be adapted to
-      real-world problems in developing and emerging markets.
-    </p>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Artificial Intelligence</h3>
-        <p>
-          Exploring AI and machine-learning approaches for data-driven
-          decision-making and practical applications.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Algorithms & Optimization</h3>
-        <p>
-          Studying algorithmic and optimization methods for complex
-          problems involving resources, networks and decision-making.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Data Science</h3>
-        <p>
-          Using data analysis and computational techniques to extract
-          useful insights and support evidence-based decisions.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Applied Research</h3>
-        <p>
-          Connecting computational research with practical technological
-          challenges in emerging economies.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="about">
-  <div class="container">
-
-    <h2 class="section-title">Application Domains</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Complex Networks</h3>
-        <p>
-          Exploring graph-based modelling and network analysis for
-          interconnected systems.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Logistics</h3>
-        <p>
-          Investigating optimization approaches for transportation,
-          routing and resource allocation.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Agricultural Systems</h3>
-        <p>
-          Exploring data-driven and optimization approaches for
-          agricultural supply chains and resource management.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Emerging Economies</h3>
-        <p>
-          Adapting computational methods to contexts where resources,
-          infrastructure and data availability present unique challenges.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="research" class="research">
-  <div class="container">
-
-    <h2 class="section-title">Research & Development</h2>
-
-    <p class="section-intro">
-      BOI is developing its research and technology portfolio. This
-      section will document research projects, technical work,
-      publications and collaborations as they become available.
-    </p>
-
-    <div class="research-box">
-      <h3>Current Direction</h3>
-
-      <p>
-        Algorithms, artificial intelligence, graph-based modelling,
-        combinatorial optimization, data analysis and applications to
-        logistics and agricultural systems.
-      </p>
-    </div>
-
-    <div class="research-box">
-      <h3>Research Collaboration</h3>
-
-      <p>
-        BOI is interested in connecting with researchers, universities,
-        technology organizations and practitioners working on algorithms,
-        discrete mathematics, optimization, AI and data science.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div class="container">
-
-    <div class="founder">
-
-      <div class="founder-box">
-        <strong>Daphrose Nindorera</strong>
-        Founder & CEO
-        <br>
-        Burundi Optimization & Intelligence
-      </div>
-
-      <div>
-        <h2 class="section-title">Leadership</h2>
-
-        <p class="section-intro">
-          BOI was founded by Daphrose Nindorera with an interest in
-          computational methods, artificial intelligence, optimization,
-          data-driven technologies and applied research.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="container">
-
-    <h2 class="section-title">Contact</h2>
-
-    <p class="section-intro">
-      For research collaboration, technology projects or professional
-      inquiries, please contact BOI.
-    </p>
-
-    <div class="contact-box">
-
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:burundioptimizationintelligenc@gmail.com">
-          burundioptimizationintelligenc@gmail.com
-        </a>
-      </p>
-
-      <p style="margin-top: 12px;">
-        <strong>Organization:</strong>
-        Burundi Optimization & Intelligence (BOI)
-      </p>
-
-      <p style="margin-top: 12px;">
-        <strong>Location:</strong> Burundi
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <p>
-    © 2026 Burundi Optimization & Intelligence (BOI).
-    All rights reserved.
-  </p>
-</footer>
-
+<section id="contact" class="alt"><div class="container"><div class="contact-box">
+<div><span class="eyebrow">Contact</span><h2 class="section-title">Connect with BOI</h2><p>For research collaboration, technology projects, academic partnerships or professional inquiries, contact BOI.</p></div>
+<div class="contact-details">
+<div class="contact-item"><strong>Email</strong><a href="mailto:burundioptimizationintelligenc@gmail.com">burundioptimizationintelligenc@gmail.com</a></div>
+<div class="contact-item"><strong>Organization</strong>Burundi Optimization & Intelligence (BOI)</div>
+<div class="contact-item"><strong>Location</strong>Burundi</div>
+</div></div></div></section>
+</main>
+<footer>© 2026 Burundi Optimization & Intelligence (BOI). All rights reserved.</footer>
 </body>
-  </html>
+</html>
