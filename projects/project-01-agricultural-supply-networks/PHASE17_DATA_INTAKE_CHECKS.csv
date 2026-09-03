@@ -1,0 +1,11 @@
+check_id,status,result
+required_streams,PASS,5 empirical streams explicitly defined
+provenance,PASS,"Source, collection date, geography, unit and reference required"
+observation_id,PASS,Unique identifier required
+raw_standardized_values,PASS,Raw value must be preserved
+geographic_matching,PASS,BOI market/network identifier required
+qa_checks,PASS,"Schema, range, duplicate and missingness checks required"
+dataset_version_freeze,PASS,Version and freeze date required
+empirical_observations_present,HOLD,No documented observation dataset available in Phase 17
+recalibration_authorized,NO,Blocked pending empirical observations
+empirical_validation_authorized,NO,Blocked pending QA-passed observations
