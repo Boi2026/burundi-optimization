@@ -1,0 +1,67 @@
+check,status,observed,expected,severity
+Phase 3 row count,PASS,24724,24724,ERROR
+Phase 3 gross price gaps positive,PASS,0,0,ERROR
+Phase 3 road distances positive,PASS,0,0,ERROR
+Phase 3 break-even formula,PASS,1.1641532182693481e-10,<1e-8,ERROR
+Profitable candidates at 500 BIF/t-km,PASS,22992,22992,ERROR
+Profitable candidates at 750 BIF/t-km,PASS,22084,22084,ERROR
+Profitable candidates at 811.331 BIF/t-km,PASS,21848,21848,ERROR
+Profitable candidates at 1000 BIF/t-km,PASS,21226,21226,ERROR
+Profitable candidates at 1250 BIF/t-km,PASS,20373,20373,ERROR
+Profitable candidates at 1500 BIF/t-km,PASS,19505,19505,ERROR
+Phase 5 normalized selected routes 500,PASS,354,354,ERROR
+Phase 5 normalized selected routes 750,PASS,350,350,ERROR
+Phase 5 normalized selected routes 811.331,PASS,349,349,ERROR
+Phase 5 normalized selected routes 1000,PASS,345,345,ERROR
+Phase 5 normalized selected routes 1250,PASS,345,345,ERROR
+Phase 5 normalized selected routes 1500,PASS,345,345,ERROR
+Phase 6 route-product rows,PASS,24724,24724,ERROR
+Phase 6 Robust count,PASS,19505,19505,ERROR
+Phase 6 Strong count,PASS,868,868,ERROR
+Phase 6 Moderate count,PASS,1475,1475,ERROR
+Phase 6 Sensitive count,PASS,1144,1144,ERROR
+Phase 6 Not profitable count,PASS,1732,1732,ERROR
+Phase 6 scenario count range,PASS,0..6,0..6,ERROR
+Phase 7 corridor count,PASS,2556,2556,ERROR
+Phase 7 priority score bounds,PASS,26.291085..98.537634,0..100,ERROR
+Phase 8 cap3 utilization bound,PASS,100.0,<=100,ERROR
+Phase 8 cap3 selected arc rows 500,PASS,353,353,ERROR
+Phase 8 cap3 selected arc rows 750,PASS,349,349,ERROR
+Phase 8 cap3 selected arc rows 811.331,PASS,349,349,ERROR
+Phase 8 cap3 selected arc rows 1000,PASS,345,345,ERROR
+Phase 8 cap3 selected arc rows 1250,PASS,345,345,ERROR
+Phase 8 cap3 selected arc rows 1500,PASS,345,345,ERROR
+Phase 10 spatial corridor count,PASS,2556,2556,ERROR
+Phase 10 scenario stability corridor count,PASS,2556,2556,ERROR
+Phase 10 tier totals,PASS,2556,2556,ERROR
+Phase 10 coordinate completeness,PASS,0,0,ERROR
+Phase 11 KEY_FINDINGS: Markets in routing layer,PASS,72.0,72,ERROR
+Phase 11 KEY_FINDINGS: Agricultural products,PASS,10.0,10,ERROR
+Phase 11 KEY_FINDINGS: Route-product observations,PASS,24724.0,24724,ERROR
+Phase 11 KEY_FINDINGS: Robust routes,PASS,19505.0,19505,ERROR
+Phase 11 KEY_FINDINGS: Strong routes,PASS,868.0,868,ERROR
+Phase 11 KEY_FINDINGS: Moderate routes,PASS,1475.0,1475,ERROR
+Phase 11 KEY_FINDINGS: Sensitive routes,PASS,1144.0,1144,ERROR
+Phase 11 KEY_FINDINGS: Not profitable routes,PASS,1732.0,1732,ERROR
+Phase 11 KEY_FINDINGS: Profitable observations at 811.331 BIF/t-km,PASS,21848.0,21848,ERROR
+Phase 11 KEY_FINDINGS: Spatial Tier A corridors,PASS,96.0,96,ERROR
+Phase 11 KEY_FINDINGS: Spatial Tier B corridors,PASS,534.0,534,ERROR
+Phase 11 KEY_FINDINGS: Spatial Tier C corridors,PASS,1804.0,1804,ERROR
+Phase 11 KEY_FINDINGS: Spatial Tier D corridors,PASS,122.0,122,ERROR
+Stress test row count,PASS,17892,17892,ERROR
+Stress test scenarios,PASS,7,7,ERROR
+Stress test corridor coverage,PASS,2556,2556,ERROR
+Stress score bounds,PASS,20.8310..99.0833,within 0..100,ERROR
+Stress test score completeness,PASS,0,0,ERROR
+Required file: price_gap_opportunities_latest.csv,PASS,True,True,ERROR
+Required file: scenario_price_opportunities.csv,PASS,True,True,ERROR
+Required file: optimization_summary.csv,PASS,True,True,ERROR
+Required file: route_robustness_all.csv,PASS,True,True,ERROR
+Required file: corridor_priority_all.csv,PASS,True,True,ERROR
+Required file: allocation_summary.csv,PASS,True,True,ERROR
+Required file: corridor_utilization_cap3.csv,PASS,True,True,ERROR
+Required file: priority_corridors_spatial.csv,PASS,True,True,ERROR
+Required file: scenario_corridor_stability.csv,PASS,True,True,ERROR
+Required file: PHASE11_RESEARCH_SYNTHESIS.md,PASS,True,True,ERROR
+Required file: KEY_FINDINGS.csv,PASS,True,True,ERROR
+Required file: stress_test_all_corrected_v2.csv,PASS,True,True,ERROR
