@@ -1,0 +1,24 @@
+check,status
+manifest:README.md,PASS
+manifest:figures/Figure_1_transport_sensitivity.png,PASS
+manifest:figures/Figure_3_cap3_margin_sensitivity.png,PASS
+manifest:figures/Figure_2_priority_tiers.png,PASS
+manifest:validation/EXTERNAL_VALIDATION_CHECKLIST.md,PASS
+manifest:tables/Table_4_cap3_allocation.csv,PASS
+manifest:tables/key_quantitative_results.json,PASS
+manifest:tables/Table_2_top50_priority_corridors.csv,PASS
+manifest:tables/Table_1_transport_sensitivity.csv,PASS
+manifest:tables/Table_3_product_robustness.csv,PASS
+manifest:manuscript/BOI_Project1_Manuscript_Draft.md,PASS
+class_counts_sum_to_observations,PASS
+spatial_tiers_sum_to_corridors,PASS
+transport_candidates_monotonic_nonincreasing,PASS
+cap3_flow_equals_selected_arcs,PASS
+Table_1_transport_sensitivity.csv:no_missing_values,PASS
+Table_3_product_robustness.csv:no_missing_values,PASS
+Table_4_cap3_allocation.csv:no_missing_values,PASS
+manuscript_guardrail:not a tonne,PASS
+manuscript_guardrail:not an observed shipment,PASS
+manuscript_guardrail:not an observed current Burundi agr,PASS
+manuscript_guardrail:do not establish arbitrage,PASS
+manuscript_guardrail:do not demonstrate actual commodity,PASS

@@ -1,23 +1,18 @@
-# BOI Project 1 — Phase 12: Research Validation & Reproducibility
+# BOI Project 1 — Phase 13: Publication & External Validation
 
-## Purpose
-Audit the internal numerical consistency, structural integrity, traceability and publication readiness of the analytical chain from Phases 1–11.
+This package converts Phases 1–12 into a publication-ready research draft and defines the external validation work required before making stronger empirical or operational claims.
 
-## Validation result
-The validation script rechecks core counts, formulas, scenario outputs, robustness classifications, corridor counts, spatial-tier totals, stress-test coverage and required-file presence.
+## Contents
+- `manuscript/BOI_Project1_Manuscript_Draft.md` — full research manuscript draft.
+- `tables/` — quantitative tables extracted from validated Phase 5–8 outputs.
+- `figures/` — publication draft figures generated from the validated outputs.
+- `validation/EXTERNAL_VALIDATION_CHECKLIST.md` — field-data validation protocol.
 
-See `VALIDATION_CHECKS.csv` for every check and `REPRODUCIBILITY_MANIFEST.csv` for file hashes.
+## Scientific status
+The computational validation status from Phase 12 is PASS (66/66 checks). This does not constitute peer review or external empirical validation.
 
-## Canonical analytical scenarios
-500, 750, 811.3311, 1000, 1250 and 1500 BIF/tonne-km.
+## Critical interpretation rule
+Normalized flow units are analytical units, not tonnes or observed shipments. The 811.3311 BIF/t-km benchmark is literature-derived and converted using an official exchange rate; it is not a current observed agricultural freight tariff. Price gaps are screening signals, not proof of realized arbitrage, causal price transmission, or investment returns.
 
-## Reproducibility principles
-1. Preserve source data separately from derived outputs.
-2. Keep normalized flow units explicitly labeled as analytical units.
-3. Treat 811.3311 BIF/t-km as a literature benchmark, not an observed tariff.
-4. Preserve all scenario assumptions and formula definitions.
-5. Distinguish empirical observations from model-generated screening and optimization outputs.
-6. Before publication, add observed freight tariffs, supply/demand quantities, vehicle capacities, road-condition/seasonal accessibility and field validation.
-
-## Publication readiness
-The project is suitable for a **research working paper / analytical framework** presentation with explicit limitations. It is not yet suitable for claims of observed trade flows, realized arbitrage, causal price transmission, investment returns, or calibrated logistics optimization.
+## Recommended next action
+Freeze the manuscript draft, obtain external transport and market data, validate a stratified sample of priority corridors, then rerun the model with observed quantities and route costs.

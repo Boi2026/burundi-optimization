@@ -1,0 +1,7 @@
+scenario_bif_tkm,products,selected_routes,total_normalized_margin_bif,profitable_candidates,benchmark_label
+500.0,10,354,446682.3616775,22992,Sensitivity scenario
+750.0,10,350,441679.12648325,22084,Sensitivity scenario
+811.3311,10,349,440458.53523243417,21848,World Bank 2019-20 approx. benchmark converted at BRB 2026-09-02 mid rate
+1000.0,10,345,436811.970939,21226,Sensitivity scenario
+1250.0,10,345,432191.968105,20373,Sensitivity scenario
+1500.0,10,345,427724.359709,19505,Sensitivity scenario
