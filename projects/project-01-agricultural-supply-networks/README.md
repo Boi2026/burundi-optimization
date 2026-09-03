@@ -1,82 +1,34 @@
-# Graph-Based Combinatorial Optimization for Agricultural Supply Networks
+BOI Project 1 — Phase 10: Spatial Scenario Analysis
 
-**Burundi Optimization & Intelligence (BOI)**  
-**Status:** Under Development
+Purpose
+-------
+Translate Phase 7 corridor priorities and Phase 8 multi-product normalized-flow results into a spatially explicit corridor screening layer.
 
-## Overview
+Inputs
+------
+- Phase 7 corridor priority ranking
+- Phase 8 cap-3 allocation across transport-cost scenarios: 500, 750, 811.331, 1000, 1250, 1500 BIF/t-km
+- Phase 1 market coordinates
 
-This research project investigates how graph theory and combinatorial optimization can support agricultural supply-network analysis in Burundi.
+Method
+------
+Spatial priority score = 45% Phase-7 priority score + 25% flow persistence + 20% robustness/strong-or-better share + 10% product breadth.
+Flow persistence = share of the six scenarios in which the corridor carries positive normalized flow.
 
-The project combines agricultural market-price information with road-network distances to identify potential market connections and evaluate how transportation costs may affect the attractiveness of inter-market routes.
+Outputs
+-------
+- priority_corridors_spatial.csv — complete spatial corridor screening table
+- priority_corridors_top50.csv — top 50 corridors
+- priority_corridors_top50.geojson — top 50 as straight-line analytical connectors between market coordinates
+- scenario_corridor_stability.csv — scenario-by-scenario corridor stability and utilization
+- benchmark_flows_811.33_cap3.csv — selected benchmark flows at 811.33 BIF/t-km
+- priority_market_nodes.csv — market coordinates used for spatial joins
+- spatial_tier_summary.csv — counts and aggregate indicators by spatial tier
+- spatial_summary.json — machine-readable execution summary
 
-## Research Objectives
-
-- Represent agricultural markets as nodes in a network.
-- Represent road connections between markets as network links.
-- Measure road-network distances between markets.
-- Identify potential market-to-market price-gap opportunities.
-- Test transportation-cost scenarios.
-- Evaluate the robustness of potential corridors under different transport-cost assumptions.
-- Explore normalized multi-product flow allocation using optimization methods.
-- Prioritize corridors for further analytical investigation.
-
-## Analytical Framework
-
-The current research workflow includes:
-
-1. Market price data preparation
-2. Spatial market analysis
-3. Road-network construction
-4. Market-to-market distance calculation
-5. Price-gap screening
-6. Transport-cost benchmarking
-7. Route robustness analysis
-8. Corridor prioritization
-9. Multi-product flow-allocation modelling
-10. Spatial scenario analysis
-
-## Optimization Approach
-
-The project uses graph-based analysis and linear optimization techniques to explore feasible market connections.
-
-The flow-allocation prototype uses normalized units to avoid interpreting model outputs as observed agricultural quantities.
-
-The optimization framework considers:
-
-- origin markets
-- destination markets
-- product-specific price differences
-- road-network distance
-- transportation-cost scenarios
-- normalized supply constraints
-- normalized demand constraints
-- shared corridor capacity
-
-## Important Limitations
-
-This is a research and modelling project.
-
-The current results should **not** be interpreted as observed agricultural trade flows, actual shipment volumes, guaranteed profitability, or current commercial transport tariffs.
-
-Actual implementation would require additional validated information, including:
-
-- market-level supply volumes
-- market-level demand volumes
-- vehicle capacities
-- actual freight tariffs
-- fuel costs
-- seasonal road conditions
-- transaction costs
-- loading and unloading costs
-- market access constraints
-- current field validation
-
-## Expected Contribution
-
-The project aims to demonstrate how data science, graph theory and optimization can be combined to support evidence-based analysis of agricultural supply networks and market accessibility in Burundi.
-
-## Project Status
-
-**Under Development**
-
-Further datasets, field validation, calibration and methodological refinement are required before the framework can support operational decision-making.
+Important limitations
+---------------------
+1. Phase 8 flow units are normalized analytical units, not observed tonnes.
+2. 811.33 BIF/t-km is a literature benchmark converted to BIF/t-km, not a current observed domestic agricultural freight tariff.
+3. GeoJSON geometries are straight-line market connectors, not shortest-path road geometries. Road distances used in the optimization remain the Phase 2 network distances.
+4. The spatial tier is a research-screening score, not an investment appraisal or policy recommendation.
