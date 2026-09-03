@@ -1,0 +1,1 @@
+observation_id,origin_raw,origin_standardized,destination_raw,destination_standardized,product_raw,product_standardized,observation_date,load_quantity_raw,load_unit,freight_amount_raw,currency,vehicle_type,included_services,source_type,source_name,evidence_reference,notes,matching_status,qa_status
