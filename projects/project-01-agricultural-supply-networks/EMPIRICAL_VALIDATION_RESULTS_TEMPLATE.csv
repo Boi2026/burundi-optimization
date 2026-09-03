@@ -1,0 +1,7 @@
+metric,domain,value,unit,sample_size,method,status,notes
+price_mae,price,,,BIF/kg,,pending,To be calculated after empirical observations are integrated
+price_mape,price,,,percent,,pending,Use only observations with valid denominators
+freight_median,transport,,,BIF/tonne-km,,pending,Observed freight benchmark
+freight_iqr,transport,,,BIF/tonne-km,,pending,Interquartile range
+accessibility_error,road_accessibility,,,km_or_percent,,pending,Depends on external accessibility measure
+corridor_rank_correlation,corridor_priority,,,correlation,,pending,Compare pre/post calibration ranking

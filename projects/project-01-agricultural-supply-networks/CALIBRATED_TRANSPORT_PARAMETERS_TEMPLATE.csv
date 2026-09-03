@@ -1,0 +1,4 @@
+parameter,value,unit,estimation_method,sample_size,confidence_or_range,status,notes
+transport_cost_central,,BIF/tonne-km,empirical_estimation,, ,pending,Replace illustrative benchmark after sufficient observations
+transport_cost_low,,BIF/tonne-km,empirical_quantile,, ,pending,Lower sensitivity bound
+transport_cost_high,,BIF/tonne-km,empirical_quantile,, ,pending,Upper sensitivity bound

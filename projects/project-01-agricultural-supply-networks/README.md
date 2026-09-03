@@ -1,30 +1,28 @@
-# BOI Project 1 — Phase 14: External Validation Protocol
+# BOI Project 1 — Phase 15: Empirical Validation & Model Recalibration
 
-Phase 14 converts the Phase 13 external-validation checklist into an operational data-collection package.
+## Purpose
+Phase 15 is the transition from analytical screening to empirical validation. It defines how externally collected observations will be integrated into the BOI agricultural supply-network model.
 
-## Objective
-Collect the empirical inputs required to move BOI Project 1 from reproducible computational screening toward externally validated analysis.
+## Objectives
+1. Compare observed transaction prices with model inputs.
+2. Compare observed freight costs with transport-cost scenarios.
+3. Compare observed road accessibility with the analytical road network.
+4. Integrate observed supply and demand where available.
+5. Re-estimate transport-cost parameters from empirical observations.
+6. Re-run corridor robustness and multi-product allocation using calibrated parameters.
+7. Quantify model error and document limitations.
 
-## Priority evidence
-1. Corridor-level freight tariffs and trip costs.
-2. Market-level supply and demand quantities for the ten modeled products.
-3. Road condition and seasonal accessibility.
-4. Transaction-level market prices.
-5. Handling, loading, unloading, spoilage/loss, taxes and market fees.
-6. Validation of a stratified sample of Tier A/B corridors.
+## Scientific status
+This phase is **prepared for empirical data integration**. It must not be described as empirically validated until observations have been collected, quality-checked, matched to model entities, and used in out-of-sample validation.
 
-## Important scientific rule
-The existing model must not be presented as predicting observed shipments, estimating current freight tariffs, or establishing causal price transmission until these empirical inputs are collected and incorporated.
+## Required upstream package
+Phase 14 — External Validation provides the collection templates and validation protocol.
 
-## Proposed workflow
-- Step 1: sample priority corridors.
-- Step 2: collect standardized observations.
-- Step 3: quality-control and document provenance.
-- Step 4: compare observed transport costs with the 500–1,500 BIF/t-km sensitivity range.
-- Step 5: recalibrate the optimization using observed quantities/capacities.
-- Step 6: re-run robustness and corridor prioritization.
-- Step 7: document validation results and limitations.
-
-## Status
-Phase 14 — Protocol and collection templates prepared.
-No new empirical observations are claimed by this package.
+## Outputs planned after data collection
+- empirical validation dataset
+- calibrated transport-cost parameters
+- price prediction/error metrics
+- accessibility validation metrics
+- recalibrated corridor ranking
+- out-of-sample validation report
+- final model limitations statement

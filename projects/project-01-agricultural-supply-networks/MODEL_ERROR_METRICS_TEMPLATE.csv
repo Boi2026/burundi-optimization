@@ -1,0 +1,5 @@
+metric,product,market_or_route,n_observations,value,unit,split,status,notes
+MAE,,,,,BIF/kg,validation,pending,
+RMSE,,,,,BIF/kg,validation,pending,
+MAPE,,,,,percent,validation,pending,
+bias,,,,BIF/kg,validation,pending,
