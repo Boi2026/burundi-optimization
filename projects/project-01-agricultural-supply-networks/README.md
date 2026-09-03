@@ -1,18 +1,30 @@
-# BOI Project 1 — Phase 13: Publication & External Validation
+# BOI Project 1 — Phase 14: External Validation Protocol
 
-This package converts Phases 1–12 into a publication-ready research draft and defines the external validation work required before making stronger empirical or operational claims.
+Phase 14 converts the Phase 13 external-validation checklist into an operational data-collection package.
 
-## Contents
-- `manuscript/BOI_Project1_Manuscript_Draft.md` — full research manuscript draft.
-- `tables/` — quantitative tables extracted from validated Phase 5–8 outputs.
-- `figures/` — publication draft figures generated from the validated outputs.
-- `validation/EXTERNAL_VALIDATION_CHECKLIST.md` — field-data validation protocol.
+## Objective
+Collect the empirical inputs required to move BOI Project 1 from reproducible computational screening toward externally validated analysis.
 
-## Scientific status
-The computational validation status from Phase 12 is PASS (66/66 checks). This does not constitute peer review or external empirical validation.
+## Priority evidence
+1. Corridor-level freight tariffs and trip costs.
+2. Market-level supply and demand quantities for the ten modeled products.
+3. Road condition and seasonal accessibility.
+4. Transaction-level market prices.
+5. Handling, loading, unloading, spoilage/loss, taxes and market fees.
+6. Validation of a stratified sample of Tier A/B corridors.
 
-## Critical interpretation rule
-Normalized flow units are analytical units, not tonnes or observed shipments. The 811.3311 BIF/t-km benchmark is literature-derived and converted using an official exchange rate; it is not a current observed agricultural freight tariff. Price gaps are screening signals, not proof of realized arbitrage, causal price transmission, or investment returns.
+## Important scientific rule
+The existing model must not be presented as predicting observed shipments, estimating current freight tariffs, or establishing causal price transmission until these empirical inputs are collected and incorporated.
 
-## Recommended next action
-Freeze the manuscript draft, obtain external transport and market data, validate a stratified sample of priority corridors, then rerun the model with observed quantities and route costs.
+## Proposed workflow
+- Step 1: sample priority corridors.
+- Step 2: collect standardized observations.
+- Step 3: quality-control and document provenance.
+- Step 4: compare observed transport costs with the 500–1,500 BIF/t-km sensitivity range.
+- Step 5: recalibrate the optimization using observed quantities/capacities.
+- Step 6: re-run robustness and corridor prioritization.
+- Step 7: document validation results and limitations.
+
+## Status
+Phase 14 — Protocol and collection templates prepared.
+No new empirical observations are claimed by this package.

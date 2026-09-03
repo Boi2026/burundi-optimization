@@ -1,0 +1,7 @@
+sample_id,tier,origin_market,destination_market,priority_reason,products_to_validate,minimum_freight_observations,minimum_price_observations,road_check_required,seasonal_check_required,status
+A01,Tier A,,,,,,YES,YES,planned
+A02,Tier A,,,,,,YES,YES,planned
+A03,Tier A,,,,,,YES,YES,planned
+B01,Tier B,,,,,,YES,YES,planned
+B02,Tier B,,,,,,YES,YES,planned
+B03,Tier B,,,,,,YES,YES,planned

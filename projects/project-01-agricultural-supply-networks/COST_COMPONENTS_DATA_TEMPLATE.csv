@@ -1,0 +1,1 @@
+observation_id,origin_market,destination_market,commodity,date,freight_bif,loading_bif,unloading_bif,handling_bif,spoilage_loss_bif,taxes_fees_bif,informal_charges_bif,other_cost_bif,total_trip_cost_bif,source_reference,verification_status,notes

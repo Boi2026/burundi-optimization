@@ -1,16 +1,34 @@
-# Phase 12 — Core Data Dictionary
+# Phase 14 Data Dictionary
 
-| Field / concept | Meaning | Unit | Status |
-|---|---|---|---|
-| gross_price_gap_bif_kg | Destination price minus origin price | BIF/kg | Derived from observed price data |
-| road_distance_km | Network road distance between markets | km | Derived from analytical road graph |
-| break_even_transport_bif_ton_km | Price gap converted to maximum transport cost before gap is consumed | BIF/t-km | Derived |
-| scenario_bif_tkm | Tested transport-cost assumption | BIF/t-km | Assumption/scenario |
-| net_margin_bif_kg | Gross price gap minus scenario transport cost per kg | BIF/kg | Model-derived |
-| scenarios_profitable | Number of tested transport scenarios with positive margin | count / 6 | Model-derived |
-| robustness_share_pct | scenarios_profitable / 6 × 100 | % | Model-derived |
-| priority_score | Composite corridor priority score | 0–100 | Model-derived |
-| flow_unit | Normalized allocation quantity | analytical unit | Model-derived; not tonnes |
-| capacity_utilization_pct | Flow relative to normalized corridor capacity | % | Model-derived |
-| spatial_priority_score | Spatial screening composite | 0–100 | Model-derived |
-| stress_score | Stress-test resilience score | 0–100 | Model-derived |
+## Core identifiers
+- `observation_id`: unique record identifier.
+- `origin_market`, `destination_market`: BOI market names.
+- `market`: market where a supply, demand or price observation is recorded.
+- `commodity`: one of the ten modeled products.
+
+## Freight
+- `payload_tonnes`: payload transported in tonnes.
+- `freight_cost_bif`: observed freight charge in BIF.
+- `total_trip_distance_km`: observed or documented route distance.
+- `fuel_price_bif_per_litre`: fuel price at observation time.
+
+## Quantities
+- `available_supply_quantity`: available quantity during the stated period.
+- `observed_demand_quantity`: observed demand/sales quantity.
+- `conversion_to_tonnes`: conversion factor to tonnes.
+
+## Road
+- `road_condition`: observed physical condition.
+- `passability`: passable/limited/closed or a documented equivalent.
+- `closure_or_delay`: disruption information.
+- `travel_time_hours`: observed travel time.
+
+## Prices
+- `price_bif`: observed transaction or market price in BIF.
+- `unit`: kg, tonne, bag, litre, etc.
+- `quality_grade`: quality/grade information where relevant.
+
+## Provenance
+- `source_type`: interview, administrative record, market survey, transporter quote, field observation, etc.
+- `source_reference`: traceable source identifier.
+- `verification_status`: unverified, checked, independently verified, etc.
