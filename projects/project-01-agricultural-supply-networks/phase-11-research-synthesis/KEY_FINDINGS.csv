@@ -1,0 +1,17 @@
+Indicator,Value,Interpretation
+Markets in routing layer,72,Markets represented in the Phase 2 network distance matrix
+Agricultural products,10,Products represented in the price analysis
+Route-product observations,24724,Ordered market-pair product observations screened in robustness analysis
+Robust routes,19505,Profitable under all six transport-cost scenarios
+Strong routes,868,Profitable under five of six scenarios
+Moderate routes,1475,Profitable under three or four scenarios
+Sensitive routes,1144,Profitable under one or two scenarios
+Not profitable routes,1732,Not profitable under tested scenarios
+Profitable observations at 811.331 BIF/t-km,21848,Phase 3 transport-cost screening result
+Spatial Tier A corridors,96,Highest spatial screening tier
+Spatial Tier B corridors,534,Priority spatial screening tier
+Spatial Tier C corridors,1804,Secondary spatial screening tier
+Spatial Tier D corridors,122,Surveillance tier
+Tier A average score,93.7173,Average spatial priority score
+Tier A average product breadth,9.90625,Average number of products represented
+Tier A average active scenarios,5.5729,Average number of six scenarios with positive normalized flow
