@@ -1,0 +1,11 @@
+check_id,check,status,result
+P19-01,Unique observation IDs,PENDING,
+P19-02,Required provenance fields,PENDING,
+P19-03,Raw values preserved,PENDING,
+P19-04,Unit/currency consistency,PENDING,
+P19-05,Market matching,PENDING,
+P19-06,Product matching,PENDING,
+P19-07,Corridor matching,PENDING,
+P19-08,Duplicate detection,PENDING,
+P19-09,Anomaly review,PENDING,
+P19-10,Freeze eligibility,BLOCKED,No verified empirical observations currently available

@@ -1,0 +1,1 @@
+observation_id,source_id,source_type,observation_date,ingestion_date,data_stream,market_match_status,product_match_status,corridor_match_status,unit_status,currency_status,provenance_status,qa_status,freeze_status,notes

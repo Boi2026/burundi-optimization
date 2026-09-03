@@ -1,0 +1,22 @@
+# Phase 19 QA Checklist
+
+- [ ] Raw source preserved
+- [ ] Unique observation IDs
+- [ ] No duplicate IDs
+- [ ] Source recorded
+- [ ] Evidence reference recorded
+- [ ] Observation date valid
+- [ ] Geography recorded
+- [ ] Product/category recorded where applicable
+- [ ] Original unit retained
+- [ ] Original value retained
+- [ ] Standardized value documented
+- [ ] Currency conversion documented where used
+- [ ] Market matching reviewed
+- [ ] Product matching reviewed
+- [ ] Corridor matching reviewed
+- [ ] Outliers flagged, not silently deleted
+- [ ] Unmatched observations isolated
+- [ ] QA status assigned
+- [ ] Dataset version assigned
+- [ ] Freeze decision documented
