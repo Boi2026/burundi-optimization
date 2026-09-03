@@ -1,34 +1,21 @@
-# Phase 14 Data Dictionary
+# Phase 16 Data Dictionary
 
-## Core identifiers
-- `observation_id`: unique record identifier.
-- `origin_market`, `destination_market`: BOI market names.
-- `market`: market where a supply, demand or price observation is recorded.
-- `commodity`: one of the ten modeled products.
+| Field | Meaning | Example | Required |
+|---|---|---|---|
+| observation_id | Stable unique observation key | P16-000001 | Yes |
+| observation_date | Date observed/reported | 2026-09-01 | Yes |
+| source_name | Organization/person/source | Transporter interview | Yes |
+| source_reference | Document/form/reference | INT-001 | Yes where available |
+| location_raw | Original location label | Gitega | Yes |
+| boi_market_id | Matched BOI market identifier | GITEGA | Where applicable |
+| match_status | matched/unmatched/review | matched | Yes |
+| product | BOI product label | maize | Where applicable |
+| raw_value | Reported value before transformation | 25000 | Yes |
+| standardized_value | Converted analytical value | 25000 | If transformed |
+| unit | Measurement unit | BIF/kg | Yes |
+| currency | Currency code | BIF | Where applicable |
+| collection_method | Survey/admin/web/document | interview | Yes |
+| quality_flag | pass/review/reject | pass | Yes |
+| notes | Context/limitations | wet-season road | Optional |
 
-## Freight
-- `payload_tonnes`: payload transported in tonnes.
-- `freight_cost_bif`: observed freight charge in BIF.
-- `total_trip_distance_km`: observed or documented route distance.
-- `fuel_price_bif_per_litre`: fuel price at observation time.
-
-## Quantities
-- `available_supply_quantity`: available quantity during the stated period.
-- `observed_demand_quantity`: observed demand/sales quantity.
-- `conversion_to_tonnes`: conversion factor to tonnes.
-
-## Road
-- `road_condition`: observed physical condition.
-- `passability`: passable/limited/closed or a documented equivalent.
-- `closure_or_delay`: disruption information.
-- `travel_time_hours`: observed travel time.
-
-## Prices
-- `price_bif`: observed transaction or market price in BIF.
-- `unit`: kg, tonne, bag, litre, etc.
-- `quality_grade`: quality/grade information where relevant.
-
-## Provenance
-- `source_type`: interview, administrative record, market survey, transporter quote, field observation, etc.
-- `source_reference`: traceable source identifier.
-- `verification_status`: unverified, checked, independently verified, etc.
+Additional stream-specific fields are defined in the CSV templates.

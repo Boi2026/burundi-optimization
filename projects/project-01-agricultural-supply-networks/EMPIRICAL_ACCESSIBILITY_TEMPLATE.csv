@@ -1,0 +1,1 @@
+observation_id,observation_date,source_name,source_reference,origin_raw,origin_boi_market_id,destination_raw,destination_boi_market_id,travel_time_hours,distance_km,route_reference,transport_mode,road_condition,weather_context,collection_method,quality_flag,notes

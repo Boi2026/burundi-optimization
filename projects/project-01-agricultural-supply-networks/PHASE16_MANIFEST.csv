@@ -1,0 +1,14 @@
+file_name,file_type,purpose,status
+README.md,documentation,phase overview,ready
+PHASE16_COLLECTION_PROTOCOL.md,documentation,collection and integration protocol,ready
+DATA_DICTIONARY.md,documentation,field definitions,ready
+PHASE16_QA_CHECKLIST.md,documentation,data quality controls,ready
+PHASE16_STATUS.md,documentation,current scientific status,ready
+EMPIRICAL_PRICES_TEMPLATE.csv,template,market price observations,ready
+EMPIRICAL_FREIGHT_TEMPLATE.csv,template,freight observations,ready
+EMPIRICAL_ACCESSIBILITY_TEMPLATE.csv,template,travel/accessibility observations,ready
+EMPIRICAL_SUPPLY_DEMAND_TEMPLATE.csv,template,supply and demand observations,ready
+EMPIRICAL_COST_COMPONENTS_TEMPLATE.csv,template,transport/logistics cost components,ready
+UNMATCHED_OBSERVATIONS.csv,review,unmatched external entities,ready
+DATASET_MANIFEST_TEMPLATE.csv,template,versioned dataset metadata,ready
+PHASE16_MANIFEST.csv,manifest,package inventory,ready
