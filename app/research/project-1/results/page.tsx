@@ -2,7 +2,7 @@ export default function Project1ResultsPage() {
   const transportScenarios = [
     ["500", "22,992", "354", "446,682.36"],
     ["750", "22,084", "350", "441,679.13"],
-    ["811.331", "21,848", "349", "440,458.54"],
+    ["811.331", "21,848", "349", "440,398.14"],
     ["1,000", "21,226", "345", "436,811.97"],
     ["1,250", "20,373", "345", "432,191.97"],
     ["1,500", "19,505", "345", "427,724.36"],
@@ -24,7 +24,7 @@ export default function Project1ResultsPage() {
   return (
     <main className="container">
       <section className="hero">
-        <p className="eyebrow">BOI RESEARCH · PROJECT 1</p>
+        <p className="eyebrow">BOI RESEARCH · 01 · RESULTS</p>
 
         <h1>Results</h1>
 
@@ -36,7 +36,8 @@ export default function Project1ResultsPage() {
         <div className="notice">
           <strong>Scientific status:</strong> analytically reproducible, but
           not yet empirically validated. Independent transaction-level
-          observations remain required for calibration and out-of-sample testing.
+          observations remain required for calibration and out-of-sample
+          testing.
         </div>
       </section>
 
@@ -138,9 +139,9 @@ export default function Project1ResultsPage() {
         </div>
 
         <p className="caption">
-          The 811.331 BIF/t-km value is a literature-derived benchmark converted
-          using the BRB exchange rate; it is not a current observed domestic
-          agricultural freight tariff.
+          The 811.331 BIF/t-km value is a literature-derived benchmark
+          converted using the BRB exchange rate; it is not a current observed
+          domestic agricultural freight tariff.
         </p>
       </section>
 
@@ -184,8 +185,8 @@ export default function Project1ResultsPage() {
           The multi-product model jointly allocates normalized flows subject to
           product-level supply and demand bounds and shared corridor-capacity
           constraints. At 811.331 BIF/t-km with a capacity of three normalized
-          units, the model selects 349 positive flow arcs and a total normalized
-          objective value of 440,398.14 BIF.
+          units, the model selects 349 positive flow arcs and a total
+          normalized objective value of 440,398.14 BIF.
         </p>
 
         <div className="grid two">
@@ -280,7 +281,7 @@ export default function Project1ResultsPage() {
 
           <article className="card">
             <span>Secondary evidence</span>
-            <strong>Ongoing</strong>
+            <strong>Controlled</strong>
             <p>
               Official INSBU and World Bank evidence is integrated under
               controlled crosswalks.
@@ -312,11 +313,11 @@ export default function Project1ResultsPage() {
         </h2>
 
         <p>
-          This distinction is intentional: professional research must not present
-          modeled assumptions as observed facts. The validation pathway remains
-          open for future primary data acquisition and recalibration.
+          This distinction is intentional: professional research must not
+          present modeled assumptions as observed facts. The validation pathway
+          remains open for future primary data acquisition and recalibration.
         </p>
       </section>
     </main>
   );
-}
+      }
