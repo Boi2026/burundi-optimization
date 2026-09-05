@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
-import { getPhase, phases } from "@/data/phases";
+import { getPhase, phases } from "../../../../data/phases";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
   return phases.map((phase) => ({
-    phase: String(phase.id),
+    phase: String(phase.id).padStart(2, "0"),
   }));
 }
 
@@ -15,6 +15,7 @@ export default async function PhasePage({
   params: Promise<{ phase: string }>;
 }) {
   const { phase } = await params;
+
   const id = Number(phase);
 
   if (!Number.isInteger(id) || id < 1 || id > 44) {
@@ -27,11 +28,18 @@ export default async function PhasePage({
     notFound();
   }
 
+  const previousPhase =
+    id > 1 ? String(id - 1).padStart(2, "0") : null;
+
+  const nextPhase =
+    id < 44 ? String(id + 1).padStart(2, "0") : null;
+
   return (
     <main className="container">
       <section className="hero">
         <p className="eyebrow">
-          BOI RESEARCH · PROJECT 1 · PHASE {String(id).padStart(2, "0")}
+          BOI RESEARCH · PROJECT 1 · PHASE{" "}
+          {String(id).padStart(2, "0")}
         </p>
 
         <h1>{currentPhase.title}</h1>
@@ -53,15 +61,18 @@ export default async function PhasePage({
 
         <div className="card">
           <p>
-            <strong>Research group:</strong> {currentPhase.group}
+            <strong>Research group:</strong>{" "}
+            {currentPhase.group}
           </p>
 
           <p>
-            <strong>Phase status:</strong> {currentPhase.status}
+            <strong>Phase status:</strong>{" "}
+            {currentPhase.status}
           </p>
 
           <p>
-            <strong>Record:</strong> {currentPhase.detail}
+            <strong>Record:</strong>{" "}
+            {currentPhase.detail}
           </p>
         </div>
       </section>
@@ -72,27 +83,27 @@ export default async function PhasePage({
         <h2>Research status</h2>
 
         <div className="notice">
-          This phase is presented as part of the documented BOI research
-          process. The website does not upgrade analytical or secondary
-          evidence into empirical validation.
+          This phase is presented as part of the documented BOI
+          research process. The website does not upgrade analytical
+          or secondary evidence into empirical validation.
         </div>
       </section>
 
       <section className="section">
         <div className="grid two">
-          {id > 1 && (
+          {previousPhase && (
             <a
               className="card"
-              href={`/research/project-1/phases/${id - 1}`}
+              href={`/research/project-1/phases/${previousPhase}`}
             >
               ← Previous phase
             </a>
           )}
 
-          {id < 44 && (
+          {nextPhase && (
             <a
               className="card"
-              href={`/research/project-1/phases/${id + 1}`}
+              href={`/research/project-1/phases/${nextPhase}`}
             >
               Next phase →
             </a>
@@ -101,7 +112,10 @@ export default async function PhasePage({
       </section>
 
       <section className="section">
-        <a className="button" href="/research/project-1">
+        <a
+          className="button"
+          href="/research/project-1"
+        >
           Back to Project 1
         </a>
       </section>
