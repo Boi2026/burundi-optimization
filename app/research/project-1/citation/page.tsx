@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Citation | BOI Project 1",
+  title: "Citation | Agricultural Supply Network Optimization in Burundi",
 };
 
 export default function Citation() {
@@ -14,7 +14,7 @@ export default function Citation() {
           </Link>
 
           <nav className="links">
-            <Link href="/research/project-1">Project 1</Link>
+            <Link href="/research/project-1">Research 01</Link>
             <Link href="/research/project-1/reproducibility">
               Reproducibility
             </Link>
@@ -26,7 +26,7 @@ export default function Citation() {
         <section className="page-hero">
           <div className="wrap">
             <Link className="back" href="/research/project-1">
-              ← Project 1
+              ← Research 01
             </Link>
 
             <span className="eyebrow">Citation</span>
@@ -34,8 +34,8 @@ export default function Citation() {
             <h1>How to reference this research</h1>
 
             <p>
-              Use the project title, organization and version/date when
-              referencing the public research record.
+              Use the research title, organization, year, and version when
+              referencing the public BOI research record.
             </p>
           </div>
         </section>
@@ -46,17 +46,20 @@ export default function Citation() {
               <h3>Recommended reference</h3>
 
               <p>
-                Burundi Optimization & Intelligence (BOI).{" "}
+                Burundi Optimization & Intelligence (BOI). (2026).{" "}
                 <em>
-                  Graph-Based Combinatorial Optimization for Agricultural
-                  Supply Networks
+                  Agricultural Supply Network Optimization in Burundi: A
+                  Graph-Based Combinatorial Optimization Framework
                 </em>
-                . BOI Project 1 research record, 2026.
+                . BOI Research Record, Version 1.0.
               </p>
 
               <div className="note" style={{ marginTop: 18 }}>
-                Versioned repository materials should be cited alongside the
-                research record when reproducing a specific result.
+                <strong>Version and reproducibility.</strong> This research
+                record is maintained as a versioned public research record.
+                When reproducing a specific result, cite the corresponding
+                repository version or commit in addition to this research
+                record.
               </div>
             </div>
           </div>
@@ -64,7 +67,9 @@ export default function Citation() {
       </main>
 
       <footer className="footer">
-        <div className="wrap">BOI Project 1 · Citation</div>
+        <div className="wrap">
+          BOI Research 01 · Citation · Version 1.0
+        </div>
       </footer>
     </>
   );
