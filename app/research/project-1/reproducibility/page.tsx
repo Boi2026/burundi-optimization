@@ -114,4 +114,24 @@ export default function ReproducibilityPage() {
       </section>
 
       <section className="section">
-        <p className="ey
+        <p className="eyebrow">05 · SCIENTIFIC DISCLOSURE</p>
+
+        <h2>Current research boundary</h2>
+
+        <div className="card">
+          <p>
+            The analytical baseline is finalized and reproducible. The
+            current evidence base does not justify an empirical validation
+            claim.
+          </p>
+
+          <p>
+            Future empirical observations will be integrated through
+            documented validation gates before any recalibration or
+            out-of-sample performance claim is published.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
+}
