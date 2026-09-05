@@ -1,11 +1,11 @@
 export default function Project1ResultsPage() {
   const transportScenarios = [
-    ["500", "22,992", "354", "446,682.36"],
-    ["750", "22,084", "350", "441,679.13"],
-    ["811.331", "21,848", "349", "440,398.14"],
-    ["1,000", "21,226", "345", "436,811.97"],
-    ["1,250", "20,373", "345", "432,191.97"],
-    ["1,500", "19,505", "345", "427,724.36"],
+    { cost: "500", candidates: "22,992", selected: "354", margin: "446,682.36" },
+    { cost: "750", candidates: "22,084", selected: "350", margin: "441,679.13" },
+    { cost: "811.331", candidates: "21,848", selected: "349", margin: "440,398.14" },
+    { cost: "1,000", candidates: "21,226", selected: "345", margin: "436,811.97" },
+    { cost: "1,250", candidates: "20,373", selected: "345", margin: "432,191.97" },
+    { cost: "1,500", candidates: "19,505", selected: "345", margin: "427,724.36" },
   ];
 
   const robustness = [
@@ -25,19 +25,16 @@ export default function Project1ResultsPage() {
     <main className="container">
       <section className="hero">
         <p className="eyebrow">BOI RESEARCH · 01 · RESULTS</p>
-
         <h1>Results</h1>
-
         <p className="lead">
-          Quantitative results from the analytical optimization framework for
-          agricultural supply networks in Burundi.
+          Quantitative results from the analytical optimization framework
+          for agricultural supply networks in Burundi.
         </p>
-
         <div className="notice">
-          <strong>Scientific status:</strong> analytically reproducible, but
-          not yet empirically validated. Independent transaction-level
-          observations remain required for calibration and out-of-sample
-          testing.
+          <strong>Scientific status:</strong> the results below are
+          analytically reproducible. They do not constitute empirical
+          validation of the model because independent transaction-level
+          freight, supply, demand and cost observations are still required.
         </div>
       </section>
 
@@ -55,13 +52,13 @@ export default function Project1ResultsPage() {
         </article>
 
         <article className="card">
-          <span>Road network</span>
+          <span>Road distance</span>
           <strong>37,981.7 km</strong>
-          <p>Retained OSM road-network length.</p>
+          <p>Retained OSM road network length.</p>
         </article>
 
         <article className="card">
-          <span>Scenarios</span>
+          <span>Optimization</span>
           <strong>6</strong>
           <p>Transport-cost scenarios evaluated.</p>
         </article>
@@ -69,13 +66,14 @@ export default function Project1ResultsPage() {
 
       <section className="section">
         <p className="eyebrow">01 · NETWORK STRUCTURE</p>
-
         <h2>Road-network and corridor results</h2>
 
         <p>
-          The prepared routing layer contains 65,566 nodes and 86,205 edges.
-          All 72 BOI markets were snapped to the network, producing a complete
-          72×72 market distance matrix with 2,556 unique unordered corridors.
+          The routing layer contains 65,566 nodes and 86,205 edges after
+          network preparation. All 72 markets were snapped to the network,
+          producing a complete 72×72 market distance matrix with 2,556
+          unique unordered corridors and no unreachable market pairs in the
+          analytical network.
         </p>
 
         <div className="grid two">
@@ -103,13 +101,15 @@ export default function Project1ResultsPage() {
 
       <section className="section">
         <p className="eyebrow">02 · PRICE-GAP SCREENING</p>
-
         <h2>Potential arbitrage opportunities</h2>
 
         <p>
-          Ordered origin–destination pairs were screened using the latest
-          available product-market prices. The resulting opportunities are
-          modeled signals, not observed transactions or realized profits.
+          The price-gap layer evaluates ordered origin–destination pairs
+          using the latest available product-market prices. At the
+          illustrative transport-cost scenarios, thousands of route-product
+          combinations remain above the modeled break-even threshold. These
+          are opportunity signals, not observed transactions or realized
+          profits.
         </p>
 
         <div className="table-wrap">
@@ -124,35 +124,34 @@ export default function Project1ResultsPage() {
             </thead>
 
             <tbody>
-              {transportScenarios.map(
-                ([cost, candidates, selected, margin]) => (
-                  <tr key={cost}>
-                    <td>{cost}</td>
-                    <td>{candidates}</td>
-                    <td>{selected}</td>
-                    <td>{margin} BIF</td>
-                  </tr>
-                )
-              )}
+              {transportScenarios.map((r) => (
+                <tr key={r.cost}>
+                  <td>{r.cost}</td>
+                  <td>{r.candidates}</td>
+                  <td>{r.selected}</td>
+                  <td>{r.margin} BIF</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
 
         <p className="caption">
           The 811.331 BIF/t-km value is a literature-derived benchmark
-          converted using the BRB exchange rate; it is not a current observed
-          domestic agricultural freight tariff.
+          converted using the BRB exchange rate; it is not a current
+          observed domestic agricultural freight tariff.
         </p>
       </section>
 
       <section className="section">
         <p className="eyebrow">03 · ROBUSTNESS</p>
-
         <h2>Product-level robustness across transport scenarios</h2>
 
         <p>
-          Robustness is the share of screened route-product opportunities that
-          remain profitable across all six modeled transport-cost scenarios.
+          Robustness measures the share of screened route-product
+          opportunities that remain profitable across the six modeled
+          transport-cost scenarios. Higher values indicate lower sensitivity
+          to the assumed transport-cost range.
         </p>
 
         <div className="table-wrap">
@@ -178,20 +177,20 @@ export default function Project1ResultsPage() {
 
       <section className="section">
         <p className="eyebrow">04 · MULTI-PRODUCT ALLOCATION</p>
-
         <h2>Coupled flow optimization</h2>
 
         <p>
-          The multi-product model jointly allocates normalized flows subject to
-          product-level supply and demand bounds and shared corridor-capacity
-          constraints. At 811.331 BIF/t-km with a capacity of three normalized
-          units, the model selects 349 positive flow arcs and a total
-          normalized objective value of 440,398.14 BIF.
+          The multi-product model jointly allocates normalized flows subject
+          to product-level supply and demand bounds and shared
+          corridor-capacity constraints. Under the 811.331 BIF/t-km
+          benchmark with a corridor capacity of three normalized units, the
+          model selects 349 positive flow arcs with a total normalized
+          objective value of 440,398.14 BIF.
         </p>
 
         <div className="grid two">
           <article className="card">
-            <span>Benchmark</span>
+            <span>Benchmark scenario</span>
             <strong>811.331 BIF/t-km</strong>
           </article>
 
@@ -212,20 +211,20 @@ export default function Project1ResultsPage() {
         </div>
 
         <p className="caption">
-          A normalized unit is a modeling unit, not a tonne, truckload, or
-          observed shipment volume.
+          “Normalized unit” is a modeling unit and must not be interpreted
+          as a tonne, truckload, or observed shipment volume.
         </p>
       </section>
 
       <section className="section">
         <p className="eyebrow">05 · SPATIAL PRIORITIZATION</p>
-
         <h2>Priority corridors</h2>
 
         <p>
-          Spatial prioritization combines corridor priority, optimization-flow
-          persistence, robustness and product breadth. The resulting tiers are
-          96 A, 534 B, 1,804 C and 122 D corridors.
+          Spatial prioritization combines corridor priority, persistence in
+          the optimization scenarios, robustness and product breadth. The
+          spatial tiering identifies 96 A-tier, 534 B-tier, 1,804 C-tier and
+          122 D-tier corridors.
         </p>
 
         <div className="grid four">
@@ -258,16 +257,15 @@ export default function Project1ResultsPage() {
       </section>
 
       <section className="section">
-        <p className="eyebrow">06 · VALIDATION</p>
-
-        <h2>Validation status</h2>
+        <p className="eyebrow">06 · VALIDATION STATUS</p>
+        <h2>What these results establish — and what they do not</h2>
 
         <div className="grid two">
           <article className="card">
             <span>Analytical validation</span>
             <strong>Completed</strong>
             <p>
-              Internal consistency and deterministic QA checks passed.
+              Deterministic checks and internal consistency controls passed.
             </p>
           </article>
 
@@ -280,10 +278,10 @@ export default function Project1ResultsPage() {
           </article>
 
           <article className="card">
-            <span>Secondary evidence</span>
-            <strong>Controlled</strong>
+            <span>External secondary evidence</span>
+            <strong>Ongoing</strong>
             <p>
-              Official INSBU and World Bank evidence is integrated under
+              Public INSBU and World Bank evidence is being integrated under
               controlled crosswalks.
             </p>
           </article>
@@ -299,25 +297,32 @@ export default function Project1ResultsPage() {
         </div>
 
         <p>
-          BOI will label the model empirically validated only after independent
-          observations are used for calibration and out-of-sample testing, with
-          transparent error metrics and documented acceptance criteria.
+          BOI will only label the model empirically validated after
+          independent observations are used for calibration and
+          out-of-sample testing, with transparent error metrics and
+          documented acceptance criteria.
         </p>
       </section>
 
       <section className="section cta">
-        <p className="eyebrow">RESEARCH INTEGRITY</p>
-
-        <h2>
-          Analytical results are presented separately from empirical evidence.
-        </h2>
+        <p className="eyebrow">NEXT</p>
+        <h2>Explore the research evidence</h2>
 
         <p>
-          This distinction is intentional: professional research must not
-          present modeled assumptions as observed facts. The validation pathway
-          remains open for future primary data acquisition and recalibration.
+          Review the methodology, data sources, validation record and
+          reproducibility materials before interpreting or reusing these
+          results.
         </p>
+
+        <div className="links">
+          <a href="/research/project-1/methodology">Methodology</a>
+          <a href="/research/project-1/data-sources">Data sources</a>
+          <a href="/research/project-1/validation">Validation</a>
+          <a href="/research/project-1/reproducibility">
+            Reproducibility
+          </a>
+        </div>
       </section>
     </main>
   );
-      
+}
