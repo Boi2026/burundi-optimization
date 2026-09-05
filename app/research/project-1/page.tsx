@@ -13,16 +13,13 @@ export default function ProjectOnePage() {
   return (
     <main>
       <section className="hero">
-        <p className="eyebrow">BOI Research · Project 01</p>
+        <p className="eyebrow">BOI Research · 01</p>
 
-        <h1>
-          Graph-Based Combinatorial Optimization for Agricultural Supply
-          Networks
-        </h1>
+        <h1>Agricultural Supply Network Optimization in Burundi</h1>
 
         <p className="lede">
-          A reproducible analytical framework for understanding agricultural
-          market connectivity, transport sensitivity, corridor priorities, and
+          A graph-based combinatorial optimization framework for market
+          connectivity, transport sensitivity, corridor prioritization, and
           multi-product allocation in Burundi.
         </p>
 
@@ -61,7 +58,7 @@ export default function ProjectOnePage() {
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Research architecture</p>
-          <h2>Explore the project</h2>
+          <h2>Explore the research</h2>
         </div>
 
         <div className="grid">
@@ -77,15 +74,15 @@ export default function ProjectOnePage() {
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Research process</p>
-          <h2>Phases 01–44</h2>
+          <h2>Controlled research record · 44 phases</h2>
         </div>
 
         <div className="card">
           <p>
-            The project research record is organized into 44 controlled
-            phases, covering optimization, spatial analysis, validation
-            frameworks, public-data integration, historical INSBU evidence,
-            and final scientific audit.
+            The research record is organized into 44 controlled phases,
+            covering optimization, spatial analysis, validation frameworks,
+            public-data integration, historical INSBU evidence, and final
+            scientific audit.
           </p>
 
           <Link className="button" href="/research/project-1/phases/01">
