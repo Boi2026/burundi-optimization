@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getPhase, phases } from "../../../../data/phases";
+import { getPhase, phases } from "@/data/phases";
 
 export const dynamicParams = false;
 
