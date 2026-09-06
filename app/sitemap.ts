@@ -6,6 +6,7 @@ const siteUrl = "https://burundioptimization.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
+    "/about",
     "/research",
     "/research/project-1",
     "/research/project-1/results",
