@@ -1,11 +1,11 @@
 check_id,check,status,result
-P19-01,Unique observation IDs,PENDING,
-P19-02,Required provenance fields,PENDING,
-P19-03,Raw values preserved,PENDING,
-P19-04,Unit/currency consistency,PENDING,
-P19-05,Market matching,PENDING,
-P19-06,Product matching,PENDING,
-P19-07,Corridor matching,PENDING,
-P19-08,Duplicate detection,PENDING,
-P19-09,Anomaly review,PENDING,
-P19-10,Freeze eligibility,BLOCKED,No verified empirical observations currently available
+P19-01,Unique observation IDs,PASS,219 unique observation IDs
+P19-02,Required provenance fields,PASS,All 219 observations retain source/date/market/product/evidence reference
+P19-03,Raw values preserved,PASS,All 219 observations have non-missing raw price values
+P19-04,Unit/currency consistency,PASS,All observations use BIF and BIF/kg
+P19-05,Market matching,PASS,216 matched; 3 retained in review queue
+P19-06,Product matching,PASS,219 observations mapped to beans/maize/rice
+P19-07,Corridor matching,N/A,Price observations are market-level and do not independently identify transport corridors
+P19-08,Duplicate detection,PASS,No duplicate market-product-date records detected
+P19-09,Anomaly review,PASS,All raw prices are positive; no automatic range failure
+P19-10,Freeze eligibility,BLOCKED,Price stream alone does not satisfy the multi-stream empirical freeze gate
