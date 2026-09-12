@@ -1,2 +1,2 @@
 dataset_version,freeze_date,record_count,matched_count,review_count,unmatched_count,qa_pass_count,qa_fail_count,freeze_status,reason
-P19_PENDING,,0,0,0,0,0,0,BLOCKED,Awaiting verified external observations
+P19_PRICE_WB_AUG2026_PARTIAL,2026-09-12,219,216,3,0,8,0,BLOCKED,Price stream integrated and QA-passed; freeze requires verified freight/accessibility/supply-demand/cost-component observations
