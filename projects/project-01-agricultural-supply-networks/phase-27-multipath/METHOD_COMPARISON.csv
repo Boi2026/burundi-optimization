@@ -1,0 +1,4 @@
+method,objective_bif,gap_vs_lp_pct,status
+LP exact,271034.027035,0,OPTIMAL
+Greedy lowest-cost,271034.027035,0,FEASIBLE
+Direct-first heuristic,278841.591600,2.880658,FEASIBLE
