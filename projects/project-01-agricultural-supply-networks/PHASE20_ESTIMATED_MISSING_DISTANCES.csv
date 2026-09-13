@@ -1,0 +1,6 @@
+destination,estimated_distance_km,estimate_type
+Buraza,162.2,MODEL_ESTIMATE
+Kirembasud,129.0,MODEL_ESTIMATE_ANCHORED_TO_PUBLISHED_KIREMBA_BURURI_ROUTE
+Kivuruga,137.7,MODEL_ESTIMATE
+Masanganzira,149.9,MODEL_ESTIMATE
+Nyeshenza,83.8,MODEL_ESTIMATE
