@@ -1,9 +1,9 @@
-phase,gate,status,blocking_reason,next_action
-15,Data dictionary and validation design,PASS,,Continue
-16,Collection protocol,PASS,,Continue
-17,Data intake QA,PASS,,Continue
-18,Field/acquisition framework,PASS,,Continue
-19,Multi-stream empirical freeze,BLOCKED,Missing integrated freight/accessibility/supply-demand/cost observations,Acquire and integrate
-20,Transport calibration,PASS_PROVISIONAL,5 road endpoints missing; empirical freeze upstream blocked,Re-run after Phase 19 freeze
-21,Final empirical validation,BLOCKED,Phase 19 freeze not passed,Execute after Phase 19 and 20 are frozen
-22,Publication readiness,BLOCKED,Phase 21 validation not passed,Execute after validation
+phase,gate,status,reason
+15,Design,COMPLETE,Validation architecture established
+16,Collection protocol,COMPLETE,Acquisition and provenance rules established
+17,Data intake QA,COMPLETE,QA framework executed
+18,Acquisition framework,COMPLETE,Sampling and acquisition framework executed
+19,Empirical multi-stream freeze,BLOCKED,Freight/accessibility/supply-demand/cost evidence incomplete
+20,Transport calibration,PROVISIONAL PASS,38 verified road distances; 5 missing; central coefficient 78.96 BIF/km
+21,Final empirical validation,BLOCKED,Phase 19 freeze prerequisite not satisfied
+22,Publication readiness,BLOCKED,Phase 21 validation prerequisite not satisfied
