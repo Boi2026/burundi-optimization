@@ -1,0 +1,2 @@
+scenario,corridors,products,normalized_supply_units,normalized_demand_units,optimized_transport_cost_bif,baseline_full_capacity_cost_bif,cost_reduction_vs_full_capacity_pct,optimized_margin_proxy_bif,lp_status,empirical_status
+AUTHORIZED_ESTIMATE_20_CORRIDOR,20,4,60,60,264170.36,264170.36,0,358459.97,OPTIMAL,SCENARIO_ONLY
