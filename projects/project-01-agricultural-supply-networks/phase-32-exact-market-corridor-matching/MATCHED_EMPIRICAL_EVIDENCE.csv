@@ -1,0 +1,3 @@
+match_id,market,product,match_type,evidence_value,unit,evidence_class,allowed_use,notes
+GATUMBA_MAIZE_SPREAD_2026,Gatumba,maize,exact_market_product,500,BIF/kg,observed_market_spread,market_spread_constraint,"Repeated NCBIP purchase/selling quotes; not a net margin"
+BURUNDI_MAIZE_POLICY_FLOOR_2026,Burundi,maize,policy_floor,1700,BIF/kg,policy_observation,scenario_constraint,"Minimum purchase price announced May 2026; not transaction data"
