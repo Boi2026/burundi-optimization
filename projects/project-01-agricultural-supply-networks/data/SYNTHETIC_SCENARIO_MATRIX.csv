@@ -1,0 +1,7 @@
+scenario_id,variable,shock_percent,status
+S1,baseline,0,SYNTHETIC
+S2,demand,20,SYNTHETIC
+S3,supply,-20,SYNTHETIC
+S4,transport_cost,30,SYNTHETIC
+S5,combined_supply_transport,-20,SYNTHETIC
+S5,combined_transport_cost,30,SYNTHETIC
