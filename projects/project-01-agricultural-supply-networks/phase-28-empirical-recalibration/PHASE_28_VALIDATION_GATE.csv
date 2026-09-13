@@ -1,0 +1,9 @@
+phase,criterion,status,evidence,action
+28,Market-price calibration,PARTIAL,6 recorded Aug-2026 World Bank RTFP observations,Expand market-product coverage
+28,Freight calibration,PARTIAL,1 route/product freight observation,Collect repeated corridor observations
+28,Transport-cost calibration,PARTIAL,Historical secondary VOC benchmarks,Normalize currency/time before use
+28,Travel-time calibration,NOT PASSED,No rows in empirical accessibility collection,Collect repeated route-season observations
+28,Handling calibration,NOT PASSED,No empirical cost-component observations,Collect loading/handling/unloading costs
+28,Market quantity validation,NOT PASSED,No repeated transaction volumes,Collect market-level quantity observations
+28,Reproducible solver rerun,BLOCKED,No executable solver source discovered in public project files,Restore/publish solver implementation
+28,Full empirical validation,NOT PASSED,Multiple required empirical blocks remain missing,Do not label model fully validated
