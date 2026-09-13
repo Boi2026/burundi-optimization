@@ -1,0 +1,9 @@
+phase,gate,status,blocking_reason,next_action
+15,Data dictionary and validation design,PASS,,Continue
+16,Collection protocol,PASS,,Continue
+17,Data intake QA,PASS,,Continue
+18,Field/acquisition framework,PASS,,Continue
+19,Multi-stream empirical freeze,BLOCKED,Missing integrated freight/accessibility/supply-demand/cost observations,Acquire and integrate
+20,Transport calibration,PASS_PROVISIONAL,5 road endpoints missing; empirical freeze upstream blocked,Re-run after Phase 19 freeze
+21,Final empirical validation,BLOCKED,Phase 19 freeze not passed,Execute after Phase 19 and 20 are frozen
+22,Publication readiness,BLOCKED,Phase 21 validation not passed,Execute after validation
