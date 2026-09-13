@@ -1,0 +1,8 @@
+origin,destination,dec_2024_bif,distance_status,distance_km,bif_per_km,use_in_model,reason
+Bujumbura,Bubanza,4650,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Gitega,9300,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Kayanza,9300,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Ngozi,11600,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Kirundo,16300,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Muyinga,16300,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
+Bujumbura,Cankuzo,17650,PENDING_VERIFIED_ROAD_DISTANCE,,,NO,INSBU tariff is not a freight-per-tonne measure
