@@ -1,0 +1,12 @@
+parameter,value,unit,evidence_class,status,allowed_use,notes
+price_beans_mean,2248.945,BIF/kg,institutional_estimate,empirically_constrained,price calibration/sensitivity,"Mean of 4 recorded Aug-2026 World Bank RTFP observations; not transaction data"
+price_beans_min,2120.07,BIF/kg,institutional_estimate,empirically_constrained,sensitivity,"Minimum of 4 recorded observations"
+price_beans_max,2563.76,BIF/kg,institutional_estimate,empirically_constrained,sensitivity,"Maximum of 4 recorded observations"
+price_maize,1301.50,BIF/kg,institutional_estimate,empirically_constrained,sensitivity,"Single recorded Aug-2026 observation; no variance estimate"
+price_rice,5348.14,BIF/kg,institutional_estimate,empirically_constrained,sensitivity,"Single recorded Aug-2026 observation; no variance estimate"
+freight_kayanza_bujumbura,2884.615,BIF/tonne-km,secondary_observed_derived,shock_only,shock_scenario,"Derived from 60,000 BIF for 200 kg over ~104 km; fuel-shortage episode; not a central parameter"
+voc_burundi_low,0.0545,USD/tonne-km,secondary_historical_benchmark,reference_only,bounded_prior,"Historical World Bank/EAC benchmark for good asphalt primary road"
+voc_burundi_high,0.1059,USD/tonne-km,secondary_historical_benchmark,reference_only,bounded_prior,"Historical World Bank/EAC benchmark for earth tertiary road"
+travel_time_route_level,,hours,missing,not_calibrated,none,"Empirical accessibility collection currently contains no observations"
+handling_cost,,BIF,missing,not_calibrated,none,"No route/product-specific observations"
+market_transaction_volume,,tonnes,missing,not_calibrated,none,"No repeated transaction-volume observations"
